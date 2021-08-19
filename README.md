@@ -11,30 +11,39 @@
 ・MIT License<br><br>
 
 ## 使い方
-
+#### クエリ設定
+クエリは手動で書く必要があります
 ```php
-// $query作成は手動で行ってください
-$query = '';
-
-// クエリ設定
-$database = $this->database;
 $database->setQuery($query);
+```
 
-// バインド設定
+#### バインド設定
+```php
 $database->setBind($key, $value);
+$database->setBind($key, $value, $parameter);
 $database->setBindInt($key, $value);
 $database->setBindString($key, $value);
+```
 
-// フェッチパターン設定
-// パターンの種類はPHPドキュメントをご確認ください
+#### フェッチパターン設定
+パターンの種類はPHPドキュメントをご確認ください
+```php
 $database->setFetchPattern($pattern);
+```
 
-// 複数件取得に使用
+#### 複数件取得に使用
+```php
 $database->select();
-// 単一データ取得に使用　※getName()的な関数を想定
+```
+#### 単一データ取得に使用　※getName()的な関数を想定
+```php
 $database->selectOne();
-// 更新処理に使用
+```
+#### 更新処理に使用
+```php
 $database->update();
-// 登録処理に使用
+```
+#### 登録処理に使用
+```php
 $database->insert();
 ```
