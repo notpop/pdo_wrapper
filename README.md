@@ -1,6 +1,7 @@
 # pdo_wrapper
 
 詳しくはZenn記事を読んでいただければと思いますが不便だったのでPDOラッパーを書きました。<br><br>
+https://zenn.dev/kishimoto/articles/82dccb02fc7ec3
 
 ## 前提/注意点
 ・自分の必要なだったものしか書いてないので必要に応じて追記してください。<br>
